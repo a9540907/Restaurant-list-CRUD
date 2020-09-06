@@ -1,0 +1,55 @@
+<div class="container p-5 mt-5" style="border: 1px solid #E0E3DA; border-radius: 10px; background-color: #f4f4f4;">
+  <h2 class="text-center mb-5">修改餐廳資訊!</h2>
+
+  <form action="/restaurants/{{ restaurants._id }}/edit" method="POST">
+    <div class="form-group row">
+      <label for="formGroupExampleInput" class="col-3">店家名稱 (中文)</label>
+      <input type="text" class="form-control col-8" id="list-name" name="name" placeholder="Sababa 沙巴巴中東美食"
+        value="{{restaurants.name}}">
+    </div>
+    <div class="form-group row">
+      <label for="formGroupExampleInput" class="col-3">店家名稱 (英文)</label>
+      <input type="text" class="form-control col-8" id="list-name_en" name="name_en" placeholder="Sababa Pita Bar"
+        value="{{restaurants.name_en}}">
+    </div>
+    <div class="form-group row">
+      <label for="formGroupExampleInput" class="col-3">類別</label>
+      <input type="text" class="form-control col-8" id="list-category" name="category" placeholder="中東料理"
+        value="{{restaurants.category}}">
+    </div>
+    <div class="form-group row">
+      <label for="formGroupExampleInput" class="col-3">圖片連結</label>
+      <input type="text" class="form-control col-8" id="list-image" name="image" placeholder="https://123.jpg"
+        value="{{restaurants.image}}">
+    </div>
+    <div class="form-group row">
+      <label for="formGroupExampleInput" class="col-3">店家地址</label>
+      <input type="text" class="form-control col-8" id="list-location" name="location" placeholder="台北市OO路O段 OO 巷 OO 號"
+        value="{{restaurants.location}}">
+    </div>
+    <div class="form-group row">
+      <label for="formGroupExampleInput" class="col-3">店家電話</label>
+      <input type="text" class="form-control col-8" id="list-phone" name="phone" placeholder="02-XXXXXXX"
+        value="{{restaurants.phone}}">
+    </div>
+    <div class="form-group row">
+      <label for="formGroupExampleInput" class="col-3">Google 地圖連結</label>
+      <input type="text" class="form-control col-8" id="list-google_map" name="google_map"
+        placeholder="https://goo.gl/maps/BJdmLuVdDbw" value="{{restaurants.google_map}}">
+    </div>
+    <div class="form-group row">
+      <label for="formGroupExampleInput" class="col-3">評分</label>
+      <input type="text" class="form-control col-8" id="list-rating" name="rating" placeholder="4.1"
+        value="{{restaurants.rating}}">
+    </div>
+    <div class="form-group row">
+      <label for="formGroupExampleInput" class="col-3">店家簡介</label>
+      <input type="text" class="form-control col-8" id="list-description" name="description"
+        placeholder="沙巴巴批塔是台灣第一家純手工批塔專賣店..." value="{{restaurants.description}}">
+    </div>
+    <div class="form-group row justify-content-center mt-5">
+      <button class="btn btn-success" type="submit">確認</button>
+    </div>
+  </form>
+
+</div>
